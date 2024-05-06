@@ -8,6 +8,24 @@
   color: #000;
 }
 
+wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#home,
+#portfolio-page {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Hero Banner */
 
 .hero {
@@ -224,6 +242,10 @@ video {
   gap: 2rem;
 }
 
+.brand-con-inner.full-width {
+  width: 100% !important;
+}
+
 .brand-con-inner img {
   max-width: 313px;
   width: 100%;
@@ -242,7 +264,7 @@ span {
 
 .brand-inner-text-con p.title,
 .title {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   font-family: "Playfair Display";
 }
@@ -290,7 +312,7 @@ span {
 .sub-title {
   font-family: "Playfair Display";
   font-weight: 600;
-  font-size: 24px;
+  font-size: 40px !important;
   color: #433a3a;
 }
 
@@ -321,4 +343,29 @@ span {
 
 .brand-con-inner.red-app img {
   width: 194px;
+}
+
+/* Utililty class */
+.text-center {
+  text-align: center;
+}
+
+/* huefete */
+.huefete-page .flex-row .text-container {
+  width: 50%;
+
+  flex-direction: column;
+}
+
+.huefete-page .flex-row .text-right {
+  width: 100%;
+}
+.text-right {
+  text-align: right;
+}
+
+.huefete-page .full-width {
+  img {
+    width: 30px;
+  }
 }
